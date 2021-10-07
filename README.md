@@ -25,3 +25,5 @@ Build the package using `debuild` in the main directory.
 Install the resulting package with `dpkg -i` or add it to your personal APT repository via `dput`
 
 
+This packaging is based on the work of Maarten den Braber (mdbraber on github) and we forked it to release a more debian-normalized and up-to-date release of acme.sh, managed by the Octopuce team. Thanks Maarten! 
+
