@@ -27,7 +27,6 @@ override_dh_auto_install:
 	cp -Rf debian/tmp/$(PROJECT)-$(BRANCH)/deploy/ debian/acme-sh/usr/lib/acme.sh/ 
 	cp -Rf debian/tmp/$(PROJECT)-$(BRANCH)/dnsapi/ debian/acme-sh/usr/lib/acme.sh/ 
 	cp -Rf debian/tmp/$(PROJECT)-$(BRANCH)/notify/ debian/acme-sh/usr/lib/acme.sh/
-	cp account-lib.conf debian/acme-sh/usr/lib/acme.sh/account.conf
 	cp account-etc.conf debian/acme-sh/etc/acme.sh/account.conf
 	ln -s ../lib/acme.sh/acme.sh debian/acme-sh/usr/bin/acme.sh
 
