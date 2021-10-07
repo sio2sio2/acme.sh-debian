@@ -4,7 +4,7 @@ Build-Depends: debhelper (>= 10), lsb-release, wget
 Standards-Version: 4.3.0
 
 Package: acme-sh
-Architecture: any
+Architecture: all
 Description: Unix shell script implementing ACME client protocol
  acme.sh is an ACME API client that can be used to get SSL/TLS certificates
  from various ACME-compliant Certificate Authorities
