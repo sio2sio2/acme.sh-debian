@@ -1,9 +1,15 @@
-Source: acme.sh
-Maintainer: Maarten den Braber <m@mdbraber.com> 
-Build-Depends: debhelper (>= 9), lsb-release, wget, dpkg-dev
+Source: acme-sh
+Maintainer: Benjamin Sonntag <benjamin@octopuce.fr>
+Build-Depends: debhelper (>= 10), lsb-release, wget
+Standards-Version: 4.3.0
 
-Package: acme.sh
+Package: acme-sh
 Architecture: any
-Description: A pure Unix shell script implementing ACME client protocol
+Description: Unix shell script implementing ACME client protocol
+ acme.sh is an ACME API client that can be used to get SSL/TLS certificates
+ from various ACME-compliant Certificate Authorities
+ such as Zerossl or Letsencrypt 
 Priority: optional
 Section: web
+Depends: wget | curl,
+         ${misc:Depends}

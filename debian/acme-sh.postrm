@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    remove)
+        # Remove all existing alias
+	sed -i -e '/^alias acme\.sh="acme\.sh --home /etc/acme\.sh"$/d' /root/.bashrc
+	;;
+esac
+
+#DEBHELPER#
+
+exit 0

@@ -1,0 +1,5 @@
+/usr/bin
+/etc/acme.sh
+/etc/ssl/acme.sh
+/usr/lib/acme.sh
+/var/log/acme.sh
