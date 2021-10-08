@@ -5,7 +5,7 @@ set -e
 case "$1" in
     configure)
 	    # Remove all existing alias
-	    sed -i -e '/^alias acme\.sh="acme\.sh --home /etc/acme\.sh"$/d' /root/.bashrc
+	    sed -i -e '#^alias acme\.sh="acme\.sh --home /etc/acme\.sh"$#d' /root/.bashrc
 	    # Insert the updated line
 	    echo 'alias acme.sh="acme.sh --home /etc/acme.sh"' >> /root/.bashrc
 	    # Source it now
