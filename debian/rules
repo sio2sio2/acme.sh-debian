@@ -5,7 +5,7 @@ VERSION := $(shell dpkg-parsechangelog -S version)
 PACKAGEVERSION  := $(VERSION)
 GITHUBUSER      := acmesh-official
 PROJECT		:= acme.sh
-BRANCH		:= 3.0.4
+BRANCH		:= 3.0.5
 
 
 %:
@@ -23,6 +23,7 @@ override_dh_auto_install:
 	mkdir -p debian/tmp
 	wget -P debian/tmp https://github.com/$(GITHUBUSER)/$(PROJECT)/archive/$(BRANCH).tar.gz
 	tar xzvf debian/tmp/$(BRANCH).tar.gz -C debian/tmp
+	patch debian/tmp/$(PROJECT)-$(BRANCH)/dnsapi/dns_acmedns.sh patches/acme-sh-GH4431.patch
 	cp -Rf debian/tmp/$(PROJECT)-$(BRANCH)/acme.sh debian/acme-sh/usr/lib/acme.sh/
 	cp -Rf debian/tmp/$(PROJECT)-$(BRANCH)/deploy/ debian/acme-sh/usr/lib/acme.sh/ 
 	cp -Rf debian/tmp/$(PROJECT)-$(BRANCH)/dnsapi/ debian/acme-sh/usr/lib/acme.sh/ 

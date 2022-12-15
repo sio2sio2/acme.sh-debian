@@ -1,3 +1,10 @@
+acme-sh (3.0.5-1~octopuce1) stable; urgency=medium
+
+  * Upstream release 3.0.5
+  * Add acmedns patch from GH-4431
+
+ -- Cyprien Nicolas <cyprien@octopuce.fr>  Tue, 13 Dec 2022 16:08:12 +0100
+
 acme-sh (3.0.4-1) stable; urgency=medium
 
   * Upstream release
