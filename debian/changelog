@@ -1,6 +1,12 @@
-acme-sh (3.0.6~sio2sio2) UNRELEASED; urgency=medium
+acme-sh (3.0.6-2~sio2sio2) stable; urgency=medium
 
-  * Replace cronjob with systemd timer
+  * Fix a bug in acme-sh.service.
+
+ -- José Miguel Sánchez Ales <sio2sio2@gmail.com>  Mon, 24 Jul 2023 00:33:00 +0200
+
+acme-sh (3.0.6-1~sio2sio2) stable; urgency=medium
+
+  * Replace cronjob with systemd timer. 
 
  -- José Miguel Sánchez Alés <sio2sio2@gmail.com>  Sun, 23 Jul 2023 20:40:04 +0200
 

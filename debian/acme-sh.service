@@ -3,4 +3,4 @@ Description=Renew all certificates obtained by root
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/acme.sh --cron --home "/etc/acme.sh" > /dev/null
+ExecStart=/usr/bin/acme.sh --cron --home "/etc/acme.sh"
