@@ -4,3 +4,4 @@ debian/acme-sh/
 debian/debhelper-build-stamp
 debian/files
 debian/acme-sh.debhelper.log
+debian/acme-sh.postrm.debhelper

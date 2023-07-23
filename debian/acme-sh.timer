@@ -1,0 +1,8 @@
+[Unit]
+Description=Timer for acme-sh service
+
+[Timer]
+OnCalendar=00:15:00
+
+[Install]
+WantedBy=timers.target

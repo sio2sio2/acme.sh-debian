@@ -4,11 +4,11 @@ This projects helps to package [acme.sh](https://github.com/acmesh-official/acme
 
 The resulting package will do the following:
 
-1. Install `acme.sh` and all library files (`dnsapi/`, `deploy/` and `notify`) in `/usr/lib/acme.sh`
-2. Install `account.conf` in `/etc/acme.sh/account.conf`
+1. Install `acme.sh` and all library files (`dnsapi/`, `deploy/` and `notify`) in `/usr/lib/acme.sh`.
+2. Install `account.conf` in `/etc/acme.sh/account.conf`.
 3. Set `/etc/acme.sh/cert` as the location for certificates (via `$CERT_HOME` in `account.conf`)
-4. Install the cronjob for renewing the certificates obtained as `root`
-5. Set up an alias for root (`alias acme.sh=acme.sh --home /etc/acme.sh`)
+4. Install a systemd timer for renewing the certificates obtained as `root`.
+5. Set up an alias for root (`alias acme.sh=acme.sh --home /etc/acme.sh`).
 
 # Configure
 

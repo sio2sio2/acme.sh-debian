@@ -1,6 +1,6 @@
 Source: acme-sh
-Maintainer: Benjamin Sonntag <benjamin@octopuce.fr>
-Build-Depends: debhelper (>= 10), lsb-release, wget
+Maintainer: José Miguel Sánchez Alés <sio2sio2@gmail.com>
+Build-Depends: debhelper (>= 12), lsb-release, wget
 Standards-Version: 4.3.0
 
 Package: acme-sh
